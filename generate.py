@@ -28,7 +28,7 @@ def handle_args():
     parser.add_argument(
         '-maxXSpeed', type=float, help="Maximum speed projection on x for body (default=5.0)", default=5.0)
     parser.add_argument(
-        '-vminYSpeed', type=float, help="Minimum speed projection on y for body (default=-5.0)", default=-5.0)
+        '-minYSpeed', type=float, help="Minimum speed projection on y for body (default=-5.0)", default=-5.0)
     parser.add_argument(
         '-maxYSpeed', type=float, help="Maximum speed projection on y for body (default=5.0)", default=5.0)
 
@@ -44,7 +44,7 @@ def generate(args):
             x = random.uniform(args.minXPos, args.maxXPos)
             y = random.uniform(args.minYPos, args.maxYPos)
             vx = random.uniform(args.minXSpeed, args.maxXSpeed)
-            vy = random.uniform(args.vminYSpeed, args.maxYSpeed)
+            vy = random.uniform(args.minYSpeed, args.maxYSpeed)
 
             f.write(f'{mass}\n{x} {y}\n{vx} {vy}\n')
 
