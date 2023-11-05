@@ -104,6 +104,6 @@ python analyse.py
 gcc (GCC) 13.2.0
 AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx     2.10 GHz
 ```
-![](statistic/figure.png)
+![](statistic/figure.png) ![](statistic/Figure_bar1000.png)
 
-![](statistic/figure2.png)
+![](statistic/figure2.png) ![](statistic/Figure_chart1000.png)
